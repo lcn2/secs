@@ -2,9 +2,9 @@
 #
 # secs - seconds since the Epoch
 #
-# @(#) $Revision$
-# @(#) $Id$
-# @(#) $Source$
+# @(#) $Revision: 1.1 $
+# @(#) $Id: Makefile,v 1.1 1999/09/22 02:38:55 chongo Exp chongo $
+# @(#) $Source: /usr/local/src/cmd/secs/RCS/Makefile,v $
 #
 # Copyright (c) 1993 by Landon Curt Noll.  All Rights Reserved.
 #
@@ -29,7 +29,7 @@
 SHELL=/bin/sh
 BINMODE=0555
 DESTDIR=/usr/local/bin
-INSTALL=bsdinst
+INSTALL=install
 
 all: secs
 
