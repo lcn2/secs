@@ -2,9 +2,9 @@
 #
 # secs - compute 'seconds since the epoch' by P1003.1 Posix/ISO standard method
 #
-# @(#) $Revision$
-# @(#) $Id$
-# @(#) $Source$
+# @(#) $Revision: 1.1 $
+# @(#) $Id: secs.sh,v 1.1 1999/09/22 02:37:50 chongo Exp chongo $
+# @(#) $Source: /usr/local/src/cmd/secs/RCS/secs.sh,v $
 #
 # Copyright (c) 1993 by Landon Curt Noll.  All Rights Reserved.
 #
@@ -25,6 +25,10 @@
 # USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 # OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 # PERFORMANCE OF THIS SOFTWARE.
+#
+# chongo <was here> /\oo/\
+#
+# Share and enjoy!
 #
 # This date system fails on Jan 19, 2038 if expr is limited to 31
 # bit signed values, otherwise it failes on Jan 1, 2070.
