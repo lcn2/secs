@@ -2,8 +2,8 @@
 #
 # secs - compute 'seconds since the epoch' by P1003.1 Posix/ISO standard method
 #
-# @(#) $Revision: 1.1 $
-# @(#) $Id: secs.sh,v 1.1 1999/09/22 02:37:50 chongo Exp chongo $
+# @(#) $Revision: 1.2 $
+# @(#) $Id: secs.sh,v 1.2 1999/09/27 05:36:31 chongo Exp chongo $
 # @(#) $Source: /usr/local/src/cmd/secs/RCS/secs.sh,v $
 #
 # Copyright (c) 1993 by Landon Curt Noll.  All Rights Reserved.
@@ -33,10 +33,12 @@
 # This date system fails on Jan 19, 2038 if expr is limited to 31
 # bit signed values, otherwise it failes on Jan 1, 2070.
 
-# the date format to use
+## the date format to use
+##
+#EP_FMT='X%S + \( X%M \* 60 \) + \( X%H \* 3600 \) + \( X%j \* 86400 \) + \( \( X%y - 70 \) \* 31536000 \) + \( \( \( X%y - 73 \) / 4 \) \* 86400 \)'
 #
-EP_FMT='X%S + \( X%M \* 60 \) + \( X%H \* 3600 \) + \( X%j \* 86400 \) + \( \( X%y - 70 \) \* 31536000 \) + \( \( \( X%y - 73 \) / 4 \) \* 86400 \)'
+## print the seconds since the epoch
+##
+#eval expr `TZ=UTC date "+$EP_FMT" | sed -e 's/X00* /0 /g' -e 's/X0*//g'`
 
-# print the seconds since the epoch
-#
-eval expr `TZ=UTC date "+$EP_FMT" | sed -e 's/X00* /0 /g' -e 's/X0*//g'`
+/bin/date '+%s'
