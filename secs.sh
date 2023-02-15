@@ -2,9 +2,9 @@
 #
 # secs - compute 'seconds since the epoch' by P1003.1 Posix/ISO standard method
 #
-# @(#) $Revision: 1.2 $
-# @(#) $Id: secs.sh,v 1.2 1999/09/27 05:36:31 chongo Exp chongo $
-# @(#) $Source: /usr/local/src/cmd/secs/RCS/secs.sh,v $
+# @(#) $Revision: 1.3 $
+# @(#) $Id: secs.sh,v 1.3 2000/01/19 15:47:18 chongo Exp $
+# @(#) $Source: /usr/local/src/bin/secs/RCS/secs.sh,v $
 #
 # Copyright (c) 1993 by Landon Curt Noll.  All Rights Reserved.
 #
