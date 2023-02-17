@@ -1,12 +1,8 @@
-#!/usr/bin/make
+#!/usr/bin/env make
 #
 # secs - seconds since the Epoch
 #
-# @(#) $Revision: 1.3 $
-# @(#) $Id: Makefile,v 1.3 1999/09/27 05:36:31 chongo Exp $
-# @(#) $Source: /usr/local/src/bin/secs/RCS/Makefile,v $
-#
-# Copyright (c) 1993 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 1993,2023 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
@@ -30,17 +26,20 @@
 #
 # Share and enjoy!
 
-SHELL=/bin/sh
-BINMODE=0555
-DESTDIR=/usr/local/bin
-INSTALL=install
+SHELL= bash
+BINMODE= 0555
+DESTDIR= /usr/local/bin
+INSTALL= install
+RM= rm
+CP= cp
+CHMOD= chmod
 
 all: secs
 
 secs: secs.sh
-	-rm -f $@
-	cp $@.sh $@
-	chmod +x $@
+	${RM} -f $@
+	${CP} $@.sh $@
+	${CHMOD} +x $@
 
 install: all
 	${INSTALL} -c -m ${BINMODE} secs ${DESTDIR}/secs
@@ -48,4 +47,4 @@ install: all
 clean:
 
 clobber: clean
-	-rm -f secs
+	${RM} -f secs
