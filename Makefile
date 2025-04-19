@@ -2,7 +2,7 @@
 #
 # secs - seconds since the Epoch
 #
-# Copyright (c) 1999,2000,2025,2025 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 1999-2000,2023,2025 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
