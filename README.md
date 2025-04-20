@@ -1,6 +1,6 @@
 # secs
 
-print `seconds since the epoch` by the P1003.1 Posix/ISO standard method
+Print `seconds since the epoch` by the P1003.1 Posix/ISO standard method.
 
 
 # To install
@@ -10,9 +10,17 @@ sudo make install
 ```
 
 
-# To use
+# Example
 
 ```sh
+$ /usr/local/bin/secs
+1745122888
+```
+
+
+# To use
+
+```
 /usr/local/bin/secs
 ```
 
